@@ -1,0 +1,238 @@
+.door-pricing-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2a56a8;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.parameters-table {
+  border: 1px solid #e6e6e6;
+}
+
+.parameters-table tr {
+  border-bottom: 1px solid #e6e6e6;
+  transition: background-color 0.2s;
+}
+
+.parameters-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.parameters-table tr:last-child {
+  border-bottom: none;
+}
+
+.param-name {
+  background-color: #f0f7ff;
+  font-weight: 600;
+  width: 40%;
+  color: #2a56a8;
+}
+
+.param-value {
+  width: 60%;
+  background-color: #ffffff;
+}
+
+.input-table {
+  border: 1px solid #e6e6e6;
+}
+
+.input-table th {
+  background-color: #4a86e8;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.input-table tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.input-table tr:last-child {
+  border-bottom: none;
+}
+
+.input-table .param-name {
+  background-color: #f0f7ff;
+  color: #2a56a8;
+  font-weight: 600;
+}
+
+.rounded-value {
+  color: #4a86e8;
+  padding-left: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fcfcfc;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a86e8;
+  box-shadow: 0 0 0 3px rgba(74, 134, 232, 0.2);
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+.output-section {
+  text-align: center;
+  margin: 30px 0 10px;
+  padding: 15px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.output-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2a56a8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.output-arrow {
+  font-size: 28px;
+  color: #4a86e8;
+  margin: 15px 0;
+}
+
+.output-fields {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.price-field {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-label {
+  background-color: #4a86e8;
+  padding: 14px 20px;
+  font-weight: 600;
+  color: white;
+  min-width: 100px;
+  text-align: center;
+}
+
+.price-value {
+  background-color: #ffffff;
+  padding: 14px 20px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #d68c00;
+  border: 2px solid #4a86e8;
+}
+
+.calculate-button {
+  display: block;
+  width: 200px;
+  margin: 25px auto 10px;
+  padding: 12px;
+  background-color: #4a86e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.calculate-button:hover {
+  background-color: #2a56a8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculate-button:active {
+  transform: translateY(0);
+}
+
+.calculate-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+  font-size: 16px;
+  padding: 30px;
+}
+
+.error {
+  text-align: center;
+  background-color: #fff5f5;
+  color: #e53e3e;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 600px;
+  border: 1px solid #fed7d7;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(229, 62, 62, 0.1);
+} 

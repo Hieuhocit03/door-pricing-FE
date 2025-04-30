@@ -1,0 +1,478 @@
+.matrix-door-pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.matrix-door-pricing h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.matrix-door-pricing h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Three Column Layout */
+.three-column-layout {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Panel Sections */
+.panel-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.panel-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dimensions-section {
+  flex-shrink: 0;
+}
+
+.config-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.config-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #666;
+  font-style: italic;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.input-row:last-child {
+  margin-bottom: 0;
+}
+
+.input-row label {
+  width: 80px;
+  font-weight: bold;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selected-cell-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edf7ed;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.selected-dimensions {
+  background-color: #4caf50;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.config-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-row select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.apply-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.apply-button:hover {
+  background-color: #388e3c;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Middle Panel */
+.middle-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.matrix-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.matrix-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.matrix-header {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dimension-labels {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  margin-right: 15px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.dimension-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.w-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+}
+
+.w-inputs {
+  display: flex;
+  flex: 1;
+  gap: 52px;
+  padding-left: 120px;
+}
+
+.dimension-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.dimension-value {
+  width: 80px;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.matrix-content {
+  display: flex;
+  flex: 1;
+}
+
+.h-labels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.h-label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.h-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px;
+  height: 100%;
+}
+
+.matrix-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.matrix-cell {
+  background-color: #4a86e8;
+  color: white;
+  border-radius: 6px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.matrix-cell.selected {
+  background-color: #2a56a8;
+  transform: scale(0.97);
+  box-shadow: 0 0 0 3px rgba(42, 86, 168, 0.5);
+}
+
+.matrix-cell.configured {
+  background-color: #38761d;
+}
+
+.cell-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cell-dimensions {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.cell-config {
+  font-size: 14px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.matrix-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Right Panel - Price (Most Important) */
+.right-panel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-section {
+  flex: 1;
+  background: linear-gradient(to bottom, #ffebb8, #fff);
+  border: 2px solid #ffc107;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.price-section h3 {
+  color: #b7600b;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 193, 7, 0.3);
+  margin-bottom: 20px;
+}
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.total-price-container {
+  background-color: #ffc107;
+  color: #7d4e00;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.total-price-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.total-price-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cell-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.price-row {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.price-cell {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  min-height: 200px;
+}
+
+.price-cell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price-cell-number {
+  font-weight: bold;
+  color: #333;
+}
+
+.price-cell-dimensions {
+  font-size: 12px;
+  color: #666;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.price-cell-config {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border-left: 3px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-cell-value {
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d68c00;
+  text-align: center;
+  padding: 8px;
+  background-color: #fff8e5;
+  border-radius: 4px;
+  border: 1px solid #ffefc2;
+}
+
+/* Utility Classes */
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.error {
+  color: #d32f2f;
+} 
