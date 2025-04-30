@@ -1,9 +1,6 @@
 import axios from 'axios';
 import { DoorData } from '../types/Door';
 
-// Real API endpoint
-const API_URL = 'http://door-pricing-be-production.up.railway.app/api/products';
-
 // Mock data as fallback when API is unavailable
 const mockData: DoorData[] = [
     {
@@ -47,8 +44,8 @@ const mockData: DoorData[] = [
 // Function to fetch data from real API
 export const fetchDoorData = async (): Promise<DoorData[]> => {
     try {
-        console.log('Attempting to fetch data from:', API_URL);
-        const response = await axios.get<DoorData[]>(API_URL, {
+        console.log('Attempting to fetch data from:', `${import.meta.env.VITE_API_URL}/api/products`);
+        const response = await axios.get<DoorData[]>(`${import.meta.env.VITE_API_URL}/api/products`, {
             // Add CORS headers in case that's the issue
             headers: {
                 'Accept': 'application/json',
@@ -71,7 +68,7 @@ export const fetchDoorData = async (): Promise<DoorData[]> => {
             });
 
             // Show alert with guidance
-            alert(`Could not connect to the API at ${API_URL}. Using mock data instead. Please ensure your backend server is running.`);
+            alert(`Could not connect to the API at ${import.meta.env.VITE_API_URL}. Using mock data instead. Please ensure your backend server is running.`);
         }
 
         console.log('Falling back to mock data');
